@@ -1,7 +1,5 @@
 package day2;
 
-import static java.lang.Math.round;
-
 public class sqrt {
 
 

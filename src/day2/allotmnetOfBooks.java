@@ -1,6 +1,6 @@
 package day2;
 
-import java.util.ArrayList;
+
 
 public class allotmnetOfBooks {
 
@@ -9,15 +9,15 @@ public class allotmnetOfBooks {
         int pageCount = 0;
         int currStudent = 1;
 
-        for(int i = 0;i<nums.length;i++){
-            if(pageCount + nums[i] <= mid) {
-                pageCount += nums[i];
-            }else {
+        for (int num : nums) {
+            if (pageCount + num <= mid) {
+                pageCount += num;
+            } else {
                 currStudent++;
-                if (currStudent>noOfStudents || nums[i]>mid){
+                if (currStudent > noOfStudents || num > mid) {
                     return false;
                 }
-                pageCount = nums[i];
+                pageCount = num;
             }
         }
             return true;
@@ -49,8 +49,6 @@ public class allotmnetOfBooks {
 
         int low = Integer.MAX_VALUE;
         int high =0;
-        int ans = -1;
-
         for (int i : nums){
             low = Math.min(low,i);
             high += i;
