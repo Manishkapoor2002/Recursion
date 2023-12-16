@@ -21,12 +21,12 @@ public class powerXN {
         int n  = 5;
 
 
-        if(x == 0){
-            return 0.00;
-        } else if (n == 0) {
-            return 1;
+//        if(x == 0){
+//            return 0.00;
+//        } else if (n == 0) {
+//            return 1;
+//        }
 
-        }
         if(n < 0){
            double y = x * x;
             x = (x) * (1/y);
